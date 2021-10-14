@@ -8,7 +8,7 @@ const db = getFirestore();
 
 const urls = collection(db, "urls");
 
-export const redirect = region("eurpose-west1")
+export const redirect = region("europe-west1")
     .https.onRequest(async (req, res) => {
       try {
         const urlId = req.params[0];
